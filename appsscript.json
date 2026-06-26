@@ -1,0 +1,31 @@
+{
+  "timeZone": "Europe/Paris",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "urlFetchWhitelist": [
+    "https://generativelanguage.googleapis.com/"
+  ],
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/gmail.modify",
+    "https://www.googleapis.com/auth/script.scriptapp",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/spreadsheets"
+  ],
+  "addOns": {
+    "common": {
+      "name": "Assistant IA Triage",
+      "logoUrl": "https://img.icons8.com/fluency/128/sparkling.png",
+      "layoutProperties": {
+        "primaryColor": "#1a73e8"
+      },
+      "homepageTrigger": {
+        "runFunction": "buildHomepage",
+        "enabled": true
+      }
+    },
+    "gmail": {}
+  }
+}
